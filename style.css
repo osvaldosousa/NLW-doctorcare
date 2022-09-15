@@ -1,0 +1,359 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root { 
+   --verde-principal: hsl(170, 100%, 26%);
+   --branco-fundo: hsl(148, 23%, 89%);
+   --headline: hsl(210, 11%, 15%,);
+   --cor-paragrafo: hsl(210, 9%, 31%);
+   --cor-branco: hsl(0, 0%, 100%);
+   --button-hover-mobile: hsl(170, 100%, 14%);
+   --background-light: hsl(39, 100%, 97%);
+   --background-sobre: hsla(39, 100%, 97%, 1);
+   --section-fundo: hsl(180, 14%, 97%);
+   --bg-light: hsl(100, 14%, 97%);
+   --nav-height: 7.2rem;
+} 
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  /* line-height: 130%; */
+}
+
+body {
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  text-align: center;
+  overflow: overlay;
+  background-color: var(--branco-fundo);
+}
+
+.-container {
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.-fundo {
+  background-color: var(--section-fundo);
+}
+
+/*                          HEADER                           */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.title-color{
+  color: var(--verde-principal);
+}
+
+.logo-menu {
+  display: none;
+}
+
+/*                          HEADER-FIXO                         */
+
+/*                          HEADER-MENU-MOBILE                  */
+
+.nav-header {
+  display: none;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+}
+
+.menu.open .title-header {
+  color: white;
+
+}
+
+.menu.open .title-menu {
+  color: white;
+  font-weight: bolder;
+}
+
+.barra {
+  width: 100%;
+  height: 5px;
+  border-radius: 40px;
+  margin: 6px auto;
+  background-color: var(--verde-principal);
+  transition-duration: .3s;
+}
+
+.barra.-tres {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.menu.open {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+
+  background-color: var(--verde-principal);
+  transition-duration: s;
+}
+
+.menu.open .barra {
+  background-color: var(--branco-fundo);
+}
+
+.menu.open .nav-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 300px;
+  transform: translateY(-40%);
+}
+
+.ul-links {
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  transition-duration: .7s;
+}
+
+.ul-links:hover {
+  background-color: var(--button-hover-mobile);
+}
+
+.ul-links a {
+  color: var(--cor-branco); 
+  transition-duration: .3s;
+}
+
+.ul-social {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svg-link {
+  padding: 10px;
+  border-radius: 5px;
+  transition-duration: .7s;
+}
+
+.svg-link:hover {
+  background-color: var(--button-hover-mobile);
+}
+
+.button-main.-menu {
+  background-color: var(--branco-fundo);
+  color: var(--verde-principal);
+  line-height: 23px;
+  width: 245px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.button-main.-menu:hover {
+  background-color: var(--button-hover-mobile);
+  color: var(--cor-branco);
+}
+
+.menu.open .logo-menu {
+  display: block;
+  position: absolute;
+  left: 96px;
+  top: 35px;
+}
+
+.menu.open .menu-toggle {
+  position: absolute;
+  right: 100px;
+  top: 25px;
+}
+
+.menu.open, .nav-header, nav, ul, li, a {
+  transition-duration: .5s;
+}
+
+/*                          ANIMAÇÂO BARRAS DO MENU             */
+
+.menu.open .barra.-dois {
+  opacity: 0;
+}
+
+.menu.open .barra.-um {
+  transform: rotate(45deg) translate(9px, 5px);
+}
+
+.menu.open .barra.-tres {
+  transform: rotate(-45deg) translate(10px, -6px);
+  width: 100%;
+  margin-left: 0;
+}
+
+
+/*                          BODY                                */
+
+.paragrafo-main {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--verde-principal);
+  margin-bottom: 16px;
+}
+
+.title-main {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.paragrafo-main.-margin {
+  color: var(--cor-paragrafo);
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 32px;
+}
+
+.button-main {
+  width: 260px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 64px auto;
+
+  transition-duration: .5s;
+  background-color: var(--verde-principal);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 40px;
+
+  text-align: center;
+  color: var(--cor-branco);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.button-main:hover {
+  background-color: var(--button-hover-mobile);
+}
+
+.foto-main {
+  width: 320px;
+}
+
+.informacoes {
+  padding: 40px 80px;
+  margin-top: -20px;
+  border-radius: 6px;
+  background-color: var(--background-light);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info {
+  margin-bottom: 60px;
+}
+
+.title-info {
+  font-size: 48px;
+}
+
+.info p {
+  color: var(--verde-principal);
+  font-size: 16px;
+}
+
+.div-bg {
+  background-color: var();
+  height: 220px;
+  width: 100%;
+}
+
+.section-info {
+  height: 220px;
+  width: 100%;
+}
+
+/*                          BODY-SERVICOS                                */
+
+.section-servicos {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.title.-second {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.title.-smurf {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.servico-itens {
+  background-color: var(--cor-branco);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+  border-radius: 6px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
+}
+
+.svg-check {
+  margin-bottom: 16px;
+}
+
+.paragrafo-servico {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*                          BODY-SOBRE                              */
+
+.section-sobre {
+  background-color: var(--background-sobre);
+  padding: 100px;
+}
+
+.paragrafo-main.-sobre {
+  padding: 20px;
+  text-align: left;
+}
+
+.p-sobre {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 40px;
+  line-height: 28px;
+  text-align: left;
+}
