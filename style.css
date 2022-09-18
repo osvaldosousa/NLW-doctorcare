@@ -117,7 +117,7 @@ body {
   z-index: 10;
 
   background-color: var(--verde-principal);
-  transition-duration: s;
+  transition-duration: .5s;
 }
 
 .menu.open .barra {
@@ -186,14 +186,14 @@ body {
 .menu.open .logo-menu {
   display: block;
   position: absolute;
-  left: 96px;
-  top: 35px;
+  left: 10%;
+  top: 6%;
 }
 
 .menu.open .menu-toggle {
   position: absolute;
-  right: 100px;
-  top: 25px;
+  right: 12%;
+  top: 4%;
 }
 
 .menu.open, .nav-header, nav, ul, li, a {
@@ -274,7 +274,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-52%);
 }
 
 .info {
@@ -309,7 +309,9 @@ body {
 }
 
 .title.-second {
+  display: inline-block;
   font-size: 30px;
+  width: 200px;
   margin-bottom: 60px;
 }
 
@@ -346,7 +348,6 @@ body {
 }
 
 .paragrafo-main.-sobre {
-  padding: 20px;
   text-align: left;
 }
 
@@ -355,9 +356,8 @@ body {
   width: 250px;
   font-size: 16px;
   padding: 10px;
-  margin-bottom: 40px;
   line-height: 28px;
-  margin-left: -40px;
+  margin-left: -50px;
   text-align: left;
 }
 
