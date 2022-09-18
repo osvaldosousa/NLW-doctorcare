@@ -263,7 +263,7 @@ body {
 }
 
 .foto-main {
-  width: 320px;
+  width: 180px;
 }
 
 .informacoes {
@@ -351,9 +351,18 @@ body {
 }
 
 .p-sobre {
+  display: inline-block;
+  width: 250px;
   font-size: 16px;
   padding: 10px;
   margin-bottom: 40px;
   line-height: 28px;
+  margin-left: -40px;
   text-align: left;
+}
+
+.foto-main.-sobre {
+  width: 210px;
+  margin: 0 auto;
+  transform: translateX(-20%);
 }
