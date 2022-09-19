@@ -266,6 +266,7 @@ body {
 
 .foto-main {
   width: 180px;
+  margin: 0 auto;
 }
 
 .informacoes {
@@ -351,16 +352,11 @@ body {
   padding-top: 100px;
 }
 
-.div.p-sobre {
-  width: 230px;
-}
-
 .p-sobre {
   display: inline-block;
-  width: 200px;
+  width: 290px;
   font-size: 16px;
   padding: 10px;
   line-height: 28px;
-  margin-left: -50px;
   text-align: left;
 }
