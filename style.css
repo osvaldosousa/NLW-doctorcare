@@ -43,7 +43,6 @@ body {
 
 .-container {
   width: 90%;
-  max-width: 360px;
   text-align: center;
   margin: 0 auto;
 }
@@ -58,7 +57,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 40px;
 }
 
@@ -117,7 +116,6 @@ body {
   z-index: 10;
 
   background-color: var(--verde-principal);
-  transition-duration: .5s;
 }
 
 .menu.open .barra {
@@ -131,7 +129,7 @@ body {
   align-items: center;
   flex-direction: column;
   top: 300px;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
 }
 
 .ul-links {
@@ -176,6 +174,7 @@ body {
   width: 245px;
   padding: 10px;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .button-main.-menu:hover {
@@ -186,14 +185,14 @@ body {
 .menu.open .logo-menu {
   display: block;
   position: absolute;
-  left: 10%;
-  top: 6%;
+  left: 8%;
+  top: 4%;
 }
 
 .menu.open .menu-toggle {
   position: absolute;
-  right: 12%;
-  top: 4%;
+  right: 8%;
+  top: 2%;
 }
 
 .menu.open, .nav-header, nav, ul, li, a {
@@ -222,7 +221,7 @@ body {
 .paragrafo-main {
   font-weight: 700;
   font-size: 14px;
-  text-align: left;
+  text-align: center;
   color: var(--verde-principal);
   margin-bottom: 16px;
 }
@@ -236,7 +235,7 @@ body {
   color: var(--cor-paragrafo);
   font-size: 20px;
   text-align: center;
-  line-height: 27px;
+  line-height: 30px;
   margin-bottom: 32px;
 }
 
@@ -265,13 +264,14 @@ body {
 }
 
 .foto-main {
-  width: 180px;
+  width: 230px;
   margin: 0 auto;
 }
 
 .informacoes {
-  padding: 40px 80px;
-  margin-top: -20px;
+  width: 80%;
+  padding: 40px 40px;
+  margin: -20px auto 0 auto;
   border-radius: 6px;
   background-color: var(--background-light);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281); 
@@ -310,9 +310,8 @@ body {
 }
 
 .title.-second {
-  display: inline-block;
+  text-align: left;
   font-size: 30px;
-  width: 200px;
   margin-bottom: 60px;
 }
 
@@ -354,9 +353,10 @@ body {
 
 .p-sobre {
   display: inline-block;
-  width: 290px;
+  width: 90%;
   font-size: 16px;
   padding: 10px;
-  line-height: 28px;
+  margin-bottom: 40px;
+  line-height: 30px;
   text-align: left;
 }
