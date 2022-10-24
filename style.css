@@ -53,7 +53,8 @@ body {
 
 /*                          HEADER                           */
 
-.main-header {
+.header-conteudo {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,7 +172,7 @@ body {
   background-color: var(--branco-fundo);
   color: var(--verde-principal);
   text-align: center;
-  width: 245px;
+  font-size: 18px;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -184,13 +185,13 @@ body {
 .menu.open .logo-menu {
   display: block;
   position: absolute;
-  left: 8%;
+  left: 3%;
   top: 4%;
 }
 
 .menu.open .menu-toggle {
   position: absolute;
-  right: 8%;
+  right: 3%;
   top: 2%;
 }
 
@@ -239,10 +240,8 @@ body {
 }
 
 .button-main {
-  width: 260px;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto 64px auto;
 
@@ -255,7 +254,11 @@ body {
   text-align: center;
   color: var(--cor-branco);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.button-main svg {
+  margin-right: 10px;
 }
 
 .button-main:hover {
