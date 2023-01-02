@@ -9,18 +9,19 @@
   list-style: none;
 }
 
-:root { 
-   --verde-principal: hsl(170, 100%, 26%);
-   --branco-fundo: hsl(148, 23%, 89%);
-   --headline: hsl(210, 11%, 15%,);
-   --cor-paragrafo: hsl(210, 9%, 31%);
-   --cor-branco: hsl(0, 0%, 100%);
-   --button-hover-mobile: hsl(170, 100%, 14%);
-   --background-light: hsl(39, 100%, 97%);
-   --background-sobre: hsla(39, 100%, 97%, 1);
-   --section-fundo: hsl(180, 14%, 97%);
-   --bg-light: hsl(100, 14%, 97%);
-   --nav-height: 7.2rem;
+:root {
+  --font-size: 62.5%;
+  --verde-principal: hsl(170, 100%, 26%);
+  --branco-fundo: hsl(148, 23%, 89%);
+  --headline: hsl(210, 11%, 15%,);
+  --cor-paragrafo: hsl(210, 9%, 31%);
+  --cor-branco: hsl(0, 0%, 100%);
+  --button-hover-mobile: hsl(170, 100%, 14%);
+  --background-light: hsl(39, 100%, 97%);
+  --background-sobre: hsla(39, 100%, 97%, 1);
+  --section-fundo: hsl(180, 14%, 97%);
+  --bg-light: hsl(100, 14%, 97%);
+  --nav-height: 7.2rem;
 } 
 
 html {
@@ -30,7 +31,7 @@ html {
 html, body {
   width: 100%;
   height: 100%;
-  /* line-height: 130%; */
+  font-size: var(--font-size);
 }
 
 body {
@@ -85,7 +86,6 @@ body {
 
 .menu.open .title-header {
   color: white;
-
 }
 
 .menu.open .title-menu {
@@ -111,11 +111,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100vw;
   height: 100vh;
   z-index: 10;
-
   background-color: var(--verde-principal);
 }
 
@@ -133,10 +131,10 @@ body {
   transform: translateY(-50%);
 }
 
-.ul-links {
+.ul-links  {
   padding: 10px;
   border-radius: 40px;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 30px;
   margin-bottom: 30px;
   transition-duration: .7s;
@@ -172,7 +170,7 @@ body {
   background-color: var(--branco-fundo);
   color: var(--verde-principal);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -220,20 +218,20 @@ body {
 
 .paragrafo-main {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
   color: var(--verde-principal);
   margin-bottom: 16px;
 }
 
 .title-main {
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-bottom: 24px;
 }
 
 .paragrafo-main.-margin {
   color: var(--cor-paragrafo);
-  font-size: 20px;
+  font-size: 2.0rem;
   text-align: center;
   line-height: 30px;
   margin-bottom: 32px;
@@ -242,7 +240,6 @@ body {
 .button-main {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto 64px auto;
 
   transition-duration: .5s;
@@ -254,7 +251,7 @@ body {
   text-align: center;
   color: var(--cor-branco);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .button-main svg {
@@ -285,12 +282,12 @@ body {
 }
 
 .title-info {
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 .info p {
   color: var(--verde-principal);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .div-bg {
@@ -312,7 +309,7 @@ body {
 
 .title-second {
   text-align: left;
-  font-size: 30px;
+  font-size: 3.0rem;
   margin-bottom: 60px;
 }
 
@@ -337,7 +334,7 @@ body {
 }
 
 .paragrafo-servico {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 25px;
 }
 
@@ -356,7 +353,7 @@ body {
 .p-sobre {
   display: inline-block;
   width: 90%;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 10px;
   margin-bottom: 40px;
   line-height: 30px;
@@ -377,7 +374,7 @@ body {
 
 .ul-contatos li {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .contatos-itens a {
@@ -392,7 +389,7 @@ body {
 
 /*                          FOOOTER                              */
 
-.footer-conteudo {
+.footer-textos {
   display: flex;
   flex-direction: column;
 }
@@ -404,7 +401,7 @@ body {
 
 .main-footer p {
   display: block;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: left;
   color: white;
   margin-top: 13px;
