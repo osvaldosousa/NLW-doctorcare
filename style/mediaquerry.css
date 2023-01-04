@@ -30,11 +30,6 @@
     max-width: 1250px;
   }
 
-  .header-conteudo.-scroll {
-    position: fixed;
-    background-color: var(--button-hover-mobile);
-  }
-
   .nav-header {
     display: block;
   }
@@ -89,6 +84,26 @@
   .foto-main {
     display: block;
   }
+
+  .main-header.-scroll .header-conteudo {
+    max-width: none;
+    z-index: 10;
+    margin-bottom: 0;
+    background-color: var(--verde-principal);
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.493);
+  }
+
+  .main-header.-scroll {
+    position: fixed;
+    z-index: 10;
+    max-width: none;
+  }
+
+  .main-header.-scroll li a {
+    color: var(--cor-branco);
+  }
+
   .div-home {
     display: flex;
     justify-content: space-between;
