@@ -1,7 +1,6 @@
-window.addEventListener('scroll', scrollActive);
 const header = document.querySelector('.main-header');
-const main = document.querySelector(main)
-
+const main = document.querySelector('main');
+const btnTop = document.querySelector('.btn-goTop');
 
 function scrollActive() {
   changeHeader()
@@ -17,6 +16,32 @@ function changeHeader() {
     main.classList.remove('-scroll')
   }
 };
+
+function showButtonGoTop() {
+  if (scrollY >= 450) {
+    btnTop.classList.add('-on')
+  } else {
+    btnTop.classList.remove('-on')
+  }
+};
+
+btnTop.addEventListener('click', () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})
+
+window.addEventListener('scroll', scrollActive);
+
+let show = true;
+const menuMobile = document.querySelector(".menu");
+const menuToggle = menuMobile.querySelector(".menu-toggle");
+
+menuToggle.addEventListener("click", () => {
+  document.body.style.overflow = show ? "hidden" : "initial"
+  menuMobile.classList.toggle("open", show)
+  show = !show;
+});
+
 
 // onScroll()
 

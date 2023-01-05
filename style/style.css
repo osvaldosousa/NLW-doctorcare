@@ -55,7 +55,7 @@ body {
 /*                          HEADER                           */
 
 .header-conteudo {
-  width: 100%;
+  width: 99%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,7 @@ body {
 }
 
 main .-scroll {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 /*                          HEADER-MENU-MOBILE                  */
@@ -202,6 +202,7 @@ main .-scroll {
   font-size: 1.8rem;
   padding: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .button-main.-menu:hover {
@@ -252,11 +253,12 @@ main .-scroll {
 .btn-goTop.-on {
   z-index: 5;
   position: fixed;
-  right: 5px;
-  bottom: 10px;
+  right: 2%;
+  bottom: 2%;
   display: flex;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .paragrafo-main {
@@ -295,6 +297,7 @@ main .-scroll {
   color: var(--cor-branco);
   font-weight: 700;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .button-main svg {
