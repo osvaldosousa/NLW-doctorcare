@@ -55,7 +55,7 @@ body {
 /*                          HEADER                           */
 
 .header-conteudo {
-  width: 99%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

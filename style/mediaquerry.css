@@ -58,9 +58,12 @@
     font-size: 15px;
   }
 
+  .main-header.-scroll .ul-links a {
+    color: var(--cor-branco);
+  }
+
   .ul-links:hover  {
     background-color: initial;
-    text-decoration: underline;
   }
 
   .foto-main {
